@@ -1,0 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.brand{
+    font-size:36px;
+}
+
+.banner{
+    padding-top:20px;
+    padding-bottom:20px;
+}
