@@ -1,4 +1,5 @@
-import './App.css'
+import 'typeface-arizonia';
+import './App.css';
 
 import React, {Component} from 'react';
 
@@ -9,6 +10,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import HowItWorks from './pages/HowItWorks';
+import Terms from './pages/Terms';
 
 class App extends Component {
   render() {
@@ -34,17 +36,19 @@ class App extends Component {
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-            <div className="container main-content">
-                <Router>
-                    <Switch>
-                        <Route path="/" exact={true} render={(props) => <Home {...props} />} />
-                        <Route path="/about" exact={true} render={(props) => <About {...props} />} />
-                        <Route path="/howitworks" exact={true} render={(props) => <HowItWorks {...props} />} />                
-                        <Route path="/gallery" exact={true} render={(props) => <Home {...props} />} />                
-                        <Route path="/terms" exact={true} render={(props) => <Home {...props} />} />                                        
-                        <Route path="/contact" exact={true} render={(props) => <Home {...props} />} />                                
-                    </Switch>
-                </Router>
+            <div className="background">
+                <div className="container main-content">
+                    <Router>
+                        <Switch>
+                            <Route path="/" exact={true} render={(props) => <Home {...props} />} />
+                            <Route path="/about" exact={true} render={(props) => <About {...props} />} />
+                            <Route path="/howitworks" exact={true} render={(props) => <HowItWorks {...props} />} />                
+                            <Route path="/gallery" exact={true} render={(props) => <Home {...props} />} />                
+                            <Route path="/terms" exact={true} render={(props) => <Terms {...props} />} />                                        
+                            <Route path="/contact" exact={true} render={(props) => <Home {...props} />} />                                
+                        </Switch>
+                    </Router>
+                </div>
             </div>
         </div>
     )
