@@ -18,6 +18,10 @@ body{
     background-image: url("assets/greyfloral.png");
 }
 
+.banner{
+    background-image: url("assets/purplefloral.png");
+}
+
 .main-content{
     background-color:white;
     padding:20px;
@@ -39,4 +43,23 @@ body{
 
 .brand{
     color:purple;
+}
+
+.telephone{
+    color:purple;
+    float:right;
+    line-height:55px;
+    font-size:35px;
+    font-family:'Arizonia';
+}
+
+.telephone{
+    padding-top:10px;
+    padding-right:50px;
+}
+
+.telephone .glyphicon{
+    vertical-align: middle;
+    line-height: 55px;
+    padding-right:10px;
 }

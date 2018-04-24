@@ -3,7 +3,7 @@ import './App.css';
 
 import React, {Component} from 'react';
 
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Glyphicon} from 'react-bootstrap';
 
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import HowItWorks from './pages/HowItWorks';
 import Terms from './pages/Terms';
+import Gallery from './pages/Gallery';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <div className="banner">
                 <div className="container">
                     <span className="brand">Knight & Rose</span>
+                    <span className="telephone"><Glyphicon glyph="earphone" />07525139179</span>
                 </div>
             </div>
             <Navbar collapseOnSelect>
@@ -43,7 +45,7 @@ class App extends Component {
                             <Route path="/" exact={true} render={(props) => <Home {...props} />} />
                             <Route path="/about" exact={true} render={(props) => <About {...props} />} />
                             <Route path="/howitworks" exact={true} render={(props) => <HowItWorks {...props} />} />                
-                            <Route path="/gallery" exact={true} render={(props) => <Home {...props} />} />                
+                            <Route path="/gallery" exact={true} render={(props) => <Gallery {...props} />} />                
                             <Route path="/terms" exact={true} render={(props) => <Terms {...props} />} />                                        
                             <Route path="/contact" exact={true} render={(props) => <Home {...props} />} />                                
                         </Switch>
